@@ -9,7 +9,7 @@ client = OpenAI(
     api_key="YOU_GROQ_API_KEY",
     base_url="https://api.groq.com/openai/v1"
 )
-path = r"ADD_CSV_FILE_PATH"
+path = "cases.csv"
 # selection of the case
 for n in range(32,33):
     summary, prosecution_proof, defense_proof, facts, w1, w2, final, case_id = func(path, n)
@@ -382,7 +382,7 @@ for n in range(32,33):
     row = pd.DataFrame([{"id": case_id, "label": supervisor.verdict}])
 
     # Output path
-    output_path = "ADD_PATH_OF_OUTPUT_FILE"
+    output_path = "verdict.csv"
 
     # Append or create CSV
     if os.path.exists(output_path):
