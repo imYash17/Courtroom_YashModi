@@ -201,4 +201,4 @@ Add file paths and API keys:
 Run the simulation with:
 
 ```bash
-python courtroom_simulation.py
+python simulation.py
