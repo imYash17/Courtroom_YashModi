@@ -382,7 +382,7 @@ for n in range(32,33):
     row = pd.DataFrame([{"id": case_id, "label": supervisor.verdict}])
 
     # Output path
-    output_path = "verdict.csv"
+    output_path = "verdicts.csv"
 
     # Append or create CSV
     if os.path.exists(output_path):
