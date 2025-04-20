@@ -6,10 +6,11 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="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",
+    api_key="YOU_GROQ_API_KEY",
     base_url="https://api.groq.com/openai/v1"
 )
-path = r"C:\Users\HP\Documents\GitHub\Court_RAG\cases.csv"
+path = r"ADD_CSV_FILE_PATH"
+# selection of the case
 for n in range(32,33):
     summary, prosecution_proof, defense_proof, facts, w1, w2, final, case_id = func(path, n)
     class SupervisorAgent:
@@ -381,7 +382,7 @@ for n in range(32,33):
     row = pd.DataFrame([{"id": case_id, "label": supervisor.verdict}])
 
     # Output path
-    output_path = "C:\\Courtroom\\verdict2.csv"
+    output_path = "ADD_PATH_OF_OUTPUT_FILE"
 
     # Append or create CSV
     if os.path.exists(output_path):
