@@ -15,94 +15,121 @@ A base class for all role-playing agents. Each agent has:
 - A **history** of previous interactions
 - A **prompting method** for generating context-specific messages
 
-🎭 Agents Overview
+## 🎭 General Structure
 Each agent receives structured prompts and operates under clear responsibilities, ensuring realistic and role-consistent courtroom behavior.
 
-👨‍⚖️ Judge
-Role: Presides over the trial with neutrality and authority.
-   Opens and moderates the trial.
-   Maintains order and discipline (especially when the audience reacts).
-   Evaluates arguments, witnesses, and expert testimony.
-   Delivers the final verdict based on evidence and logic.
-   Operates based on: summary, facts, and final.
+---
 
-⚖️ Prosecution Lawyer
-Role: Argues the case against the defendant.
+## 👨‍⚖️ Judge
 
-Presents claims, evidence, and witnesses to support the plaintiff.
+**Role:** Presides over the trial with neutrality and authority.
 
-Cross-examines the defense.
+**Responsibilities:**
+- Opens and moderates the trial
+- Maintains order and discipline (especially when the audience reacts)
+- Evaluates arguments, witnesses, and expert testimony
+- Delivers the final verdict based on evidence and logic
 
-Challenges inconsistencies and uses prosecution_proof as reference.
-
-Delivers logical, ethical, and structured arguments.
-
-🛡️ Defense Lawyer 
-Role: Defends the accused party.
-
-Counters prosecution claims with logic and evidence.
-
-Cross-examines prosecution witnesses.
-
-Defends using defense_proof.
-
-Raises objections when procedures are violated.
-
-👨‍💼 Plaintiff
-Role: Brings the case forward with a clear grievance.
-
-Explains the issue and supports their argument with facts.
-
-Responds to legal questioning.
-
-Reference: prosecution_proof.
-
-👨‍💼 Defendant
-Role: Responds to accusations and defends their position.
-
-Shares personal account and counters plaintiff's claims.
-
-Replies to both legal teams.
-
-Reference: defense_proof.
-
-👁️‍🗨️ Witness 1
-Role: Supports the Plaintiff.
-
-Shares firsthand account favoring the plaintiff.
-
-May show emotional nuance (e.g., confidence, hesitation).
-
-Reference: w1.
-
-👁️‍🗨️ Witness 2
-Role: Supports the Defendant.
-
-Provides testimony defending the accused.
-
-Reacts to aggressive questioning with emotional realism.
-
-Reference: w2.
-
-👨‍🔬 Expert Consultant
-Role: Neutral third-party expert on a domain relevant to the case (e.g., forensics, psychology).
-
-Provides clear, technical, unbiased analysis.
-
-Can be questioned by both legal sides.
-
-Reference: facts.
-
-🎭 Audience
-Role: Adds emotional atmosphere and realism.
-
-Reacts with whispers, gasps, or boos.
-
-Can disrupt proceedings and trigger judge intervention.
-
-Does not participate in arguments.
+**Reference:** `summary`, `facts`, and `final`
 
 ---
+
+## ⚖️ Prosecution Lawyer
+
+**Role:** Argues the case against the defendant.
+
+**Responsibilities:**
+- Presents claims, evidence, and witnesses to support the plaintiff
+- Cross-examines the defense
+- Challenges inconsistencies
+- Delivers logical, ethical, and structured arguments
+
+**Reference:** `prosecution_proof`
+
+---
+
+## 🛡️ Defense Lawyer
+
+**Role:** Defends the accused party.
+
+**Responsibilities:**
+- Counters prosecution claims with logic and evidence
+- Cross-examines prosecution witnesses
+- Raises objections when procedures are violated
+
+**Reference:** `defense_proof`
+
+---
+
+## 👨‍💼 Plaintiff
+
+**Role:** Brings the case forward with a clear grievance.
+
+**Responsibilities:**
+- Explains the issue and supports their argument with facts
+- Responds to legal questioning
+
+**Reference:** `prosecution_proof`
+
+---
+
+## 👨‍💼 Defendant
+
+**Role:** Responds to accusations and defends their position.
+
+**Responsibilities:**
+- Shares personal account and counters plaintiff's claims
+- Replies to both legal teams
+
+**Reference:** `defense_proof`
+
+---
+
+## 👁️‍🗨️ Witness 1
+
+**Role:** Supports the Plaintiff.
+
+**Responsibilities:**
+- Shares firsthand account favoring the plaintiff
+- Shows emotional nuance (e.g., confidence, hesitation)
+
+**Reference:** `w1`
+
+---
+
+## 👁️‍🗨️ Witness 2
+
+**Role:** Supports the Defendant.
+
+**Responsibilities:**
+- Provides testimony defending the accused
+- Reacts to aggressive questioning with emotional realism
+
+**Reference:** `w2`
+
+---
+
+## 👨‍🔬 Expert Consultant
+
+**Role:** Neutral third-party expert on a domain relevant to the case (e.g., forensics, psychology).
+
+**Responsibilities:**
+- Provides clear, technical, unbiased analysis
+- Can be questioned by both legal sides
+
+**Reference:** `facts`
+
+---
+
+## 🎭 Audience
+
+**Role:** Adds emotional atmosphere and realism.
+
+**Responsibilities:**
+- Reacts with whispers, gasps, or boos
+- Can disrupt proceedings and trigger judge intervention
+- Does not participate in arguments
+
 
 ## 🧠 SupervisorAgent
 
