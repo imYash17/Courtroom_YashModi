@@ -1,7 +1,7 @@
 # Courtroom_YashModi
 It is an intelligent courtroom simulation system using Large Language Model (LLM) agents. 
 
-# 🏛️ Courtroom Simulation with LLaMA 3 & Autonomous Agents
+# 🏛️ Courtroom Simulation with Autonomous Agents
 
 This project simulates courtroom trials using autonomous agents powered by LLaMA 3. It uses structured case data (CSV format) and a Supervisor Agent to dynamically conduct trials with Judges, Lawyers, and Witnesses. The goal is to evaluate the outcome (verdict) of each case through intelligent interaction and legal reasoning.
 
