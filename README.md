@@ -180,6 +180,15 @@ You can process one or multiple cases by modifying the `case_index` or using a l
 
 ## 🚀 Usage
 
+Clone repository
+```bash
+git clone
+```
+
+Install requirements:
+```bash
+pip install -r requirements.txt
+```
 Run the simulation with:
 
 ```bash
