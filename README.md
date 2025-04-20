@@ -168,13 +168,12 @@ The Supervisor uses a loop-based system to alternate between agents, guiding the
 ## 📤 Output
 
 After each case is processed:
-- The **final verdict** is saved in `courtroom_results.csv`
+- The **final verdict** is saved in `verdicts.csv`
 - Includes:
   - `Case_ID`
   - `Verdict`: Binary value (1 = Granted, 0 = Denied)
-  - `Verdict_Text`: The final statement from the Judge
 
-You can process one or multiple cases by modifying the `case_index` or using a loop.
+You can process one or multiple cases by modifying the loop on line 13. I have uploaded two sample judgements.
 
 ---
 
