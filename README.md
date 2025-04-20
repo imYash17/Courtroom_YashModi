@@ -133,7 +133,7 @@ Each agent receives structured prompts and operates under clear responsibilities
 
 ## 🧠 SupervisorAgent
 
-The **Supervisor Agent** acts as the orchestrator of the trial. It:
+The **Supervisor Agent** acts as the orchestrator of the trial (main aim was to make it autonomous). It:
 1. **Loads** the case details from a CSV file
 2. **Initializes all agents** (Judge, Prosecutor, Defense, Witnesses)
 3. **Determines trial flow**, such as:
@@ -182,7 +182,7 @@ You can process one or multiple cases by modifying the `case_index` or using a l
 
 Clone repository
 ```bash
-git clone
+git clone https://github.com/imYash17/Courtroom_YashModi.git
 ```
 
 Install requirements:
