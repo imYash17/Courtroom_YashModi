@@ -152,12 +152,16 @@ The Supervisor uses a loop-based system to alternate between agents, guiding the
 
 ## 📦 Input Case File (CSV)
 
-The input CSV contains rows of case data. Each row includes:
-- `id`: Unique identifier for the case
-- `summary`: A high-level description of the situation
-- `context`: Factual case details
-- `witness_1` to `witness_3`: Statements from witnesses
-- `expected_verdict`: (Optional) Ground-truth label for evaluation
+1. Load legal case from CSV.
+2. Summarize into using LLM model:
+   - `summary`: Case context
+   - `prosecution_proof`: Prosecution arguments
+   - `defense_proof`: Defense arguments
+   - `facts`: Objective data (law refs, dates, events)
+   - `w1`: Witness for plaintiff
+   - `w2`: Witness for defense
+   - `final`: Suggested verdict & punishment
+3. Feed each part into respective agent prompts (Judge, Prosecutor, Defense, Witnesses, etc).
 
 ---
 
