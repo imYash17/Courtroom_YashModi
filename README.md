@@ -191,10 +191,8 @@ Install requirements:
 pip install -r requirements.txt
 ```
 Get API keys:
-```
 https://aistudio.google.com/apikey
 https://console.groq.com/keys
-```
 
 Add file paths and API keys:
 1.In summarise.py, line no 5 add GENAI API Key.
