@@ -2,7 +2,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # Configure Gemini
-genai.configure(api_key="AIzaSyDLm6D3SDMwiLVStboPKZ07oeyamOZdwvY")
+genai.configure(api_key="YOUR_API_KEY")
 model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 
