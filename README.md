@@ -183,12 +183,23 @@ You can process one or multiple cases by modifying the `case_index` or using a l
 Clone repository
 ```bash
 git clone https://github.com/imYash17/Courtroom_YashModi.git
+cd Courtroom_YashModi
 ```
 
 Install requirements:
 ```bash
 pip install -r requirements.txt
 ```
+Get API keys:
+```
+https://aistudio.google.com/apikey
+https://console.groq.com/keys
+```
+
+Add file paths and API keys:
+1.In summarise.py, line no 5 add GENAI API Key.
+2.In simulation.py, line no 9 add GROQ API Key.
+
 Run the simulation with:
 
 ```bash
